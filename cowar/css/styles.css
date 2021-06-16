@@ -1,0 +1,20 @@
+.d-flex .btn {
+  margin: 10px 20px;
+  padding: 7px 20px;
+}
+
+.d-flex table {
+  margin: 1em 10em;
+}
+
+table .hey {
+  cursor: pointer;
+}
+
+table .btnedit {
+  color: #0a1931;
+}
+
+.fa-bed :hover {
+  color: #393e46;
+}
