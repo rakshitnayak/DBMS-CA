@@ -24,18 +24,19 @@ function Createdb()
         CREATE TABLE IF NOT EXISTS hospitals(
         id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
         hospital_name VARCHAR(25) NOT NULL,
-        hospital_address VARCHAR (20),
+        hospital_address VARCHAR (100),
         pincode INT(10) NOT NULL,
         contact VARCHAR(12) NOT NULL
         );";
 
         $sql = "
         CREATE TABLE IF NOT EXISTS bed_availablity(
+        beds_id VARCHAR(10) NOT NULL PRIMARY KEY,
 	    hospital_id INT ,
         total_beds INT ,
         available_beds INT ,
         occupied_beds INT ,
-         FOREIGN KEY(hospital_id) REFERENCES hospitals(id) ON DELETE SET NULL
+        FOREIGN KEY(hospital_id) REFERENCES hospitals(id) ON DELETE SET NULL
 
         );
         

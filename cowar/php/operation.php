@@ -145,6 +145,18 @@ function TextNode($classname, $stylecss, $msg)
 }
 
 
+//for landing page search bar..
+function getSearchData()
+{
+    $search = $_POST['str'];
+    $searchQuery = "SELECT hospitals.id, hospitals.hospital_name,hospitals.hospital_address,hospitals.contact,bed_availablity.available_beds FROM hospitals,bed_availablity WHERE hospitals.pincode LIKE '%$search%'";
+    $result = mysqli_query($GLOBALS['con'], $searchQuery);
+    if (mysqli_num_rows($result) > 0) {
+        return $result;
+    }
+}
+
+
 
 ////////////////////////////////////////////////////////*BELOW CODE IS FOR BED PAGE OPERATION *////////////////////////////////////////////
 

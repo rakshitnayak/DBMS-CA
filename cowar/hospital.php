@@ -100,7 +100,7 @@ require_once("./php/operation.php");
               <th>Name</th>
               <th>address</th>
               <th>Pincode</th>
-              <th>Contact No</th>
+              <th>Ph No</th>
               <th>Edit</th>
             </tr>
           </thead>
