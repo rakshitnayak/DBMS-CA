@@ -31,7 +31,6 @@ function Createdb()
 
         $sql = "
         CREATE TABLE IF NOT EXISTS bed_availablity(
-        beds_id VARCHAR(10) NOT NULL PRIMARY KEY,
 	    hospital_id INT ,
         total_beds INT ,
         available_beds INT ,

@@ -15,7 +15,7 @@ require_once("./php/operation.php");
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.83.1">
-  <title>Cover Template · Bootstrap v5.0</title>
+  <title>DBMS CA</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
 
@@ -61,11 +61,11 @@ require_once("./php/operation.php");
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
       <div>
-        <h3 class="float-md-start mb-0">Cover</h3>
+        <h3 class="float-md-start mb-0">DBMS CA</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="../cowar/hospital.php">Admin</a>
+          <a class="nav-link" href="../cowar/team.php">Group members</a>
         </nav>
       </div>
     </header>
@@ -83,7 +83,7 @@ require_once("./php/operation.php");
         <table class="table table-dark table-striped">
           <thead>
             <tr>
-              <th>ID</th>
+              <th>Pincode</th>
               <th>Name</th>
               <th>address</th>
               <th>Available Beds</th>
@@ -102,7 +102,7 @@ require_once("./php/operation.php");
                   while ($row = mysqli_fetch_assoc($result)) { ?>
 
             <tr>
-              <td><?php echo $row['id']; ?></td>
+              <td><?php echo $row['pincode']; ?></td>
               <td><?php echo $row['hospital_name']; ?></td>
               <td><?php echo $row['hospital_address']; ?></td>
               <td><?php echo $row['available_beds']; ?></td>
